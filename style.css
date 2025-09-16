@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --back: #3f3a35;
+    --text: #f3ede3;
+    --accent: #FF4F00;
+}
+
+body {
+    background-color: var(--back);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2, h3, p, a {
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: -0.25em;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    margin-bottom: 0;
+}
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+}
+
+.controls {
+    padding: 1em 4em;
+    border-radius: 3em;
+    box-shadow: 0em 0em 0.5em rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.05);
+    pointer-events: all;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.controls:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-0.25em);
+    box-shadow: 0em 0.5em 2em rgba(0,0,0,0.25);
+}
